@@ -11,10 +11,16 @@ const tokenize = (text) => sw.removeStopwords(
     sw.fr);
 
 const jaccard_distance = (tokens1, tokens2) => 
-    tokens1.filter(v => -1 !== tokens2.indexOf(v)).length
-    / (new Set([...tokens1, ...tokens2])).size;
+    1 - new Set(tokens1.filter(v => tokens2.includes(v))).size
+    / (new Set(tokens1.concat(tokens2))).size;
 
-const tickets = Papa.parse(fs.readFileSync('tickets.csv', 'utf8')).data;
+const tickets = Papa.parse(fs.readFileSync('tickets.csv', 'utf8'), {header: true}).data;
+const save_ticket = (ticket) => {
+    tickets.push(ticket);
+    const csv_data = Papa.unparse(tickets);
+    fs.writeFileSync('tickets.csv', csv_data);
+};
+
 const server = Hapi.server({ host:'0.0.0.0', port:8000 });
 
 server.route({
@@ -28,41 +34,49 @@ server.route({
         const reqCount = req.payload.count;
         const reqProject = req.payload.project;
 
-        tickets.sort((a, b) => jaccard_distance(a[1], reqTokens) - jaccard_distance(b[1], reqTokens));
+        tickets.sort((a, b) => 
+            jaccard_distance(tokenize(a['text']), reqTokens)
+            - jaccard_distance(tokenize(b['text']), reqTokens));
+
+        const closests = tickets.slice(0, 6);
+
+        if (!closests.length) {
+            save_ticket({ id: reqTicketId, text: reqText, project: reqProject });
+            return { closest: {}, project_closests: []}
+        }
 
         const closest = {
-            id: tickets[0][0],
-            distance: jaccard_distance(tickets[0][1], reqTokens)
+            id: closests[0]['id'],
+            distance: jaccard_distance(tokenize(closests[0]['text']), reqTokens)
         };
 
         const project_closests = tickets
-            .filter(([id, tokens, project]) => project == reqProject)
+            .filter(({project}) => project == reqProject)
             .slice(0, reqCount)
-            .filter(([id, tokens]) => jaccard_distance(tokens, reqTokens) < reqTreshold)
-            .map(([id, tokens]) => ({ id, distance: jaccard_distance(tokens, reqTokens) }));
+            .filter(({text}) => jaccard_distance(tokenize(text), reqTokens) < reqTreshold)
+            .map(({id, text}) => ({ id, distance: jaccard_distance(tokenize(text), reqTokens) }));
 
         //save the new ticket
-        tickets.push({ id: reqTicketId, text: reqTokens, project: reqProject });
-        const csv_data = Papa.unparse(tickets);
-        fs.writeFileSync('tickets.csv', csv_data);
-
+        save_ticket({ id: reqTicketId, text: reqText, project: reqProject });
         return { closest, project_closests };
     }
 });
 
-server.route({
-    method:'GET',
-    path:'/health',
-    handler: () => 'OK'
-});
-
-try {
-    await server.start();
-}
-catch (err) {
-    console.log(err);
-    process.exit(1);
-}
-
-console.log('Server running at:', server.info.uri);
-process.on("SIGINT", () => process.exit(0));
+(async () => {
+    server.route({
+        method:'GET',
+        path:'/health',
+        handler: () => 'OK'
+    });
+    
+    try {
+        await server.start();
+    }
+    catch (err) {
+        console.log(err);
+        process.exit(1);
+    }
+    
+    console.log('Server running at:', server.info.uri);
+    process.on("SIGINT", () => process.exit(0));
+})();

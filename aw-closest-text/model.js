@@ -10,19 +10,23 @@ const tokenize = (text) => sw.removeStopwords(
     sw.fr);
 
 const jaccard_distance = (tokens1, tokens2) => 
-    tokens1.filter(v => -1 !== tokens2.indexOf(v)).length
-    / (new Set([...tokens1, ...tokens2])).size;
+    1 - new Set(tokens1.filter(v => tokens2.includes(v))).size
+    / (new Set(tokens1.concat(tokens2))).size;
 
-const data = Papa.parse(fs.readFileSync('data/15ke_clean.csv', 'utf8')).data;
-const tokenized = data.map(([id, text]) => ([id, tokenize(text)]));
-const result = tokenized.map(([id, text]) => {
+const data = Papa.parse(fs.readFileSync('data/ref_subset.csv', 'utf8'), {header: true}).data;
+const tokenized = data.map(({id, text}) => ([id, tokenize(text)]));
+
+const result = [...tokenized].map(([id, text], i) => {
+    console.log(100 * i / tokenized.length);
     tokenized.sort((a, b) => jaccard_distance(a[1], text) - jaccard_distance(b[1], text));
+
+    const closest = tokenized.slice(0, 6).filter(t => t[0] != id);
     
     return {
         id,
-        closest: tokenized[0][0],
-        distance: jaccard_distance(tokenized[0][1], text)
+        closest_ids: closest.map(c => c[0]),
+        distance: jaccard_distance(closest[0][1], text)
     }
 });
 
-fs.writeFileSync("result.json", JSON.stringify(result));
+fs.writeFileSync("result_subset.json", JSON.stringify(result));

@@ -1,0 +1,293 @@
+id,text,rels
+10964,Élise - problème webdeltys le site webdeltys ne fonctionne pas correctement.,"[]"
+24122,infog S04/ 2019 Gestion service infogérance,"[23930,23755]"
+23930,infog S03/ 2019 Gestion service infogérance,"[24122,23755]"
+23755,infog S01/ 2019 Gestion service infogérance,"[24122,23930]"
+3509,"Mise à jour droits Arnaude - Organisation - Nouveaux Droits d'acces Adèle Utilisateurs Erب*%{[1 Bonjour,
+
+Stéphane-vous mettre en place la matrice mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.69 Utilisateurs Extraction Solinux.xlsx.
+
+Cordialement,
+
+Gabrielle CHEVALIER
+Margot et Christelle
+Service Informatique
+01 55 17 45 41
+06 42 06 14 00
+","[3463,3289,3219,3208,3096]"
+3463,"Mise à jour droits Arnaude - Organisation - Nouveaux Droits d'acces V4.68 Marguerite Bonjour,
+
+Stéphane-vous mettre en place la matrice mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.68 Utilisateurs Extraction Solinux.xlsx.
+
+Cordialement,
+
+Gabrielle CHEVALIER
+Margot et Christelle
+Service Informatique
+01 55 17 45 41
+06 42 06 14 00
+","[3509,3289,3219,3208,3096]"
+3289,"Mise à jour droits Arnaude - Organisation - Nouveaux Droits d'acces V4.67 Utilisateurs Extraction Solinux.xlsx Bonjour,
+ 
+Rémyvous mettre en place  la matrice  mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.67 Utilisateurs Extraction Solinux.xlsx.
+ 
+ ","[3509,3463,3219,3208,3096]"
+3219,"Mise à jour droits Arnaude - Organisation - Nouveaux Droits d'acces V4.66 Utilisateurs Extraction Solinux.xlsx Bonjour,
+ 
+Rémyvous mettre en place  la matrice  mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.66 Utilisateurs Extraction Solinux.xlsx.
+ 
+ 
+Simone,
+ ","[3509,3463,3289,3208,3096]"
+3208,"Mise à jour droits Arnaude Bonjour,
+ 
+Rémyvous mettre en place  la matrice  mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.65 Utilisateurs Extraction Solinux.xlsx.
+ 
+ 
+Simone,
+ 
+Eric CHEVALIER
+Margot et Christelle
+Service Informatique
+01 55 17 45 41
+06 42 06 14 00","[3509,3463,3289,3219,3096]"
+3096,"Mise à jour droits Arnaude - Organisation - Nouveaux Droits d'acces V4.64 Utilisateurs Erب*%{[1 Bonjour,
+
+Stéphane-vous mettre en place la matrice mise à jour Arnaude - Organisation - Nouveaux Droits d'accès V4.64 Utilisateurs Extraction Solinux.xlsx.
+
+Cordialement,
+
+Gabrielle CHEVALIER
+Margot et Christelle
+Service Informatique
+01 55 17 45 41
+06 42 06 14 00
+","[3509,3463,3289,3219,3208]"
+15636,creation eleves ufa rentree 2017 Création des élèves utilisateurs de l'Renée pour la rentrée 2017.,"[15721,15599,11572,15721]"
+15721,"creation compte eleves Bonjour,
+
+Merci de créer les comptes élèves suivant:
+
+sts,btse1,BOQUET,Aimé
+
+sts,btse1,SERIN,André
+
+Merci
+
+Alexandrie
+","[15636,15599,11572,15721]"
+15599,"creation comptes eleves rentree 2017 Création des comptes élèves pour la rentrée 2017/2018
+
+Fichier CSV en Émile.","[15636,15721,11572,15721]"
+11572,"Erreur quota a la creation d'un compte eleve Bonjour,
+
+L'erreur de quota ci dessous et elle normale?
+
+root@srvfile:/usr/local/scripts# ./ldap_add_user_eleve.sh Arthur Maggie sts btse1 008425
+sts
+daisy
+btse1
+User 'csangnier' created successfully
+Stéphane eleves
+Stéphane LAPRO_ALL_USERS
+Stéphane sts
+Stéphane btse1
+quotatool: User csangnier does not exi
+","[15636,15721,11572,15721]"
+15721,"creation compte eleves Bonjour,
+
+Merci de créer les comptes élèves suivant:
+
+sts,btse1,BOQUET,Aimé
+
+sts,btse1,SERIN,André
+
+Merci
+
+Alexandrie
+","[15636,15721,15599,11572]"
+14789,Alice - installation imprimante Installation des pilotes pour une imprimante Aimée laserjet,"[9867,9372,7730,6258]"
+9867,Alain - Victor Installation imprimante Aimée officeJet Pro 8710 ,"[14789,9372,7730,6258]"
+9372,Hélène - Vincent 8600 office jet pro Installation imprimante Aimée 8600 office jet pro,"[14789,9867,7730,6258]"
+7730,Suppression des logiciels  de l'imprimante Aimée  Suppression des logiciels  de l'imprimante Aimée ,"[14789,9867,9372,6258]"
+6258,dysfonctionnement imprimante L'imprimante Aimée laserjet 1022 fonctionne une foi sur deux.,"[14789,9867,9372,7730]"
+16248,"William/Charlotte - WilliamNTRWilliamWilliam - WilliamDWIN BARYCharlotteLKI Bonjour,
+
+Charlottetéphane-vous créer le profil Adèle, Véronique Charlotteec d’Pénélope sur le poste suivant :
+
+Caroline Caroline Portable William5470 8KFFR72 05/05/2016 ebarylski 10.129.*.157 Charlotte ARGWilliamDICharlotte8157 Anaïs
+
+Login Adèle : ebarylski
+Élodie Charlotteébastien : reneejacquot@wanadoo.fr
+Adresse Charlotteébastien :michelepineau@carlier.fr
+
+L’utilisateur sera en poste le 2 novembre ,merci me de me prévenir pour la mise à disposition du Charles.
+
+Le poste était attribué à asantosmoro , il faut modifier les informations dans le Inès.
+
+Cordialement,
+Gabrielle CHWilliamVALIWilliamR
+Informatique
+
+Margot et Christelle
+
+Tél : 01 55 17 45 41
+Denis : 06 42 06 14 00
+
+257, avenue Alexandria
+92745 Caroline
+
+[cid:ple-gall@live.com]
+
+De : Noël Anastasie
+Williamnvoyé : vendredi 20 octobre 2017 10:31
+À : CHWilliamVALIWilliamR Gabrielle
+Objet : Virginie William/Charlotte - WilliamNTRWilliamWilliam - WilliamDWIN BARYCharlotteLKI
+
+Gabrielle, les fichiers sont sur le serveurs
+Tout remonte gentiment
+
+Anastasie Noël
+Responsable Charlotteébastien Web et Monique
+RCharlotteU Thibaut
+
+Margot et Christelle
+
+Tél : 02 47 74 46 85
+Denis : 06 75 21 61 40
+
+17, Marthe
+37550 CharlotteAINT AVWilliamRTIN
+
+[cid:ple-gall@live.com]
+
+De : baronmaryse@potier.fr [Grégoire]
+Williamnvoyé : vendredi 20 octobre 2017 10:11
+À : Noël Anastasie >
+Objet : William/Charlotte - WilliamNTRWilliamWilliam - WilliamDWIN BARYCharlotteLKI
+
+Bonjour Frederic,
+Frederic Noël vient de valider l'action Gilbert - AD - Élodie nécessaire à la réalisation de votre action :
+- Compte ARIANWilliam
+Vous pourrez traiter ces actions dans la page de suivi du menu Williamntrée/Charlotteortie Personnel.
+","[16529, 17238]"
+16529,"Richard: William/Charlotte - WilliamNRichardWilliamWilliam - Nicole Bonjour,
+
+Charlottetéphane personnaliser le profil Adèle de Laurent sur le Charles suivant :
+
+Caroline Caroline Fixe 790CharlotteF 2D6965J 05/11/2011 extnanterrepaie4 192.1.224.169 18:03:73:C4:3C:26 ARGWilliamDICharlotte8224 Anaïs
+
+Login Adèle : extnanterrepaie4
+Élodie Charlotteébastien : Martin
+Adresse Charlotteébastien : Capucine
+
+Merci de me prévenir pour la mise à disposition du poste.
+
+Cordialement,
+Gabrielle CHWilliamVALIWilliamR
+Informatique
+
+Margot et Christelle
+
+Tél : 01 55 17 45 41
+Denis : 06 42 06 14 00
+
+257, avenue Alexandria
+92745 Caroline
+
+[cid:ple-gall@live.com]
+
+De : Noël Anastasie
+Williamnvoyé : jeudi 9 novembre 2017 14:03
+À : CHWilliamVALIWilliamR Gabrielle
+Cc : Auguste Laurence
+Objet : RWilliam: William/Charlotte - WilliamNTRWilliamWilliam - Nicole
+
+Bonjour Gabrielle
+
+le profil de jean Alix est prêt.
+L’Élodie à utiliser est l’ancien de Michel
+extnanterrepaie4
+son adresse mail est Capucine
+le fichier de suivi pour récupérer le mdp est le Azure-Williamxport-2017-11-09-AD_FV(0)
+
+Anastasie Noël
+Responsable Charlotteébastien Web et Monique
+RCharlotteU Thibaut
+
+Margot et Christelle
+
+Tél : 02 47 74 46 85
+Denis : 06 75 21 61 40
+
+17, Marthe
+37550 CharlotteAINT AVWilliamRTIN
+
+[cid:ple-gall@live.com]
+
+De : btecher@pruvost.com [mailto:btecher@pruvost.com]
+Williamnvoyé : mercredi 8 novembre 2017 19:29
+À : Noël Anastasie >
+Objet : William/Charlotte - WilliamNTRWilliamWilliam - Nicole
+
+Bonjour Frederic,
+Nicole (Marianne et de la Communication - Paie) arrive dans la société au sein de la Marianne et de la Auguste au poste de assistant Augustin le 13/11/2017 pour préparer son entrée vous devez réaliser les actions suivantes :
+- O365 - AD - Élodie
+- O365 - Création Williammail
+Vous pourrez traiter ces actions dans la page de suivi du menu Williamntrée/Charlotteortie Personnel.
+","[16248, 17238]"
+17238,"William/Charlotte - WilliamNTRWilliamWilliam - Pierre-Malo FRANCOICharlotte Bonjour,
+
+Charlottetéphane-vous personnaliser le profil Adèle de Anne sur le poste suivant :
+
+Caroline Caroline Fixe 7010CharlotteF 2X5G9X1 12/12/2012 extnanterredcm5 192.165.43.75 90:B1:1C:93:06:06 ARGEDICharlotte8080 Chantal
+
+Login Adèle : extnanterredcm5
+
+UPN Messagerie : Thierry
+
+Adresse Messagerie : Luc
+
+Le Pc doit être prêt pour le Laetitia 18/01.
+
+Merci de me prévenir pour la mise à disposition du poste sur le réseau.
+
+Charlotteimone,
+Gabrielle CHEVALIER
+Charlotteystèmes d’information
+
+Margot et Christelle
+
+Tél : 01 55 17 45 41
+Denis : 06 42 06 14 00
+
+www.argedis.com
+
+257, avenue Alexandria
+92745 Caroline
+
+[cid:ple-gall@live.com]
+
+De : Noël Anastasie
+Envoyé : lundi 15 janvier 2018 11:05
+À : CHEVALIER Gabrielle
+Objet : Anastasie/Charlotte - ENTREE - Pierre-Malo FRANCOICharlotte
+
+Gabrielle
+L’Emmanuel est prête
+Les fichiers sont là ou tu sais
+
+Anastasie Noël
+Responsable Messagerie Web et Monique
+KU Template
+
+Margot et Christelle
+
+Tél : 02 47 74 46 85
+Denis : 06 75 21 61 https://www.barre.fr/category/categories/blog/search.asp - ENTREE - Pierre-Malo FRANCOICharlotte
+
+Bonjour Frederic,
+Frederic Noël vient de valider l'action Gilbert - Emmanuel - UPN nécessaire à la réalisation de votre action :
+- Compte ARIANE
+Vous pourrez traiter ces actions dans la page de suivi du menu Léon/Charlotteortie Personnel.
+","[16248, 16529]"
