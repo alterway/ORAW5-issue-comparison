@@ -1,4 +1,4 @@
-# oraw5 issue-comparaison
+# ORAW5 issue-comparaison
 
 This repository contain two solutions to recommend related issues please refer to their respective readme [aw-closest-text](aw-closest-text/README.md) and [tug-dependency-detection](tug-dependency-detection/README.md)
 
